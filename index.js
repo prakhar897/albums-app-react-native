@@ -16,6 +16,10 @@ const App = () => {
     );
 };
 
+// Getting rid of warnings
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Remote debugger']);
+
 
 //Render it to device
 AppRegistry.registerComponent('albums' , () => App);
